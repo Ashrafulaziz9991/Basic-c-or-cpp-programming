@@ -78,7 +78,7 @@ public:
         // root = Newnode;
 
         Newnode->next = root;
-        root->prev = Newnode; // Doubly Linked List হলে
+        root->prev = Newnode; // if Doubly Linked List
         root = Newnode;
     }
 
@@ -88,17 +88,14 @@ public:
         node *Newnode = new node(value);
         if(root == null)
         {
-            Newnode = root;
+            // Newnode = root;
+            root = Newnode;
+            last = Newnode;
             return;
         }
-        node *b = root;
-        while (b->next != null)
-        {
-            b = b->next;
-        }
-        
-        b->next = Newnode;
-        Newnode->prev = b;
+        last->next = Newnode;
+        Newnode->prev = last; // if Doubly Linked List
+        last = Newnode;
         //root = Newnode;
     }
 
@@ -299,6 +296,7 @@ int main()
 
     dl.insert_any_index(7, 2);
     dl.display();
+     cout<<st<<dl.getsize()<<endl;
 
     dl.Delete_any_index(0);
     dl.display();
@@ -312,9 +310,13 @@ int main()
 
     cout<<"size of list : "<<dl.getsize()<<"\n";
 
-    cout<<st<<dl.exist_value(1)<<endl;
-
     cout<<dl.getlast()<<"\n";
     cout<<dl.getsum()<<"\n";
+
+    cout<<st<<dl.getsize()<<endl;
+
+    dl.insert_any_index(5, 0);
+    dl.display();
+    cout<<st<<dl.getsize()<<endl;
     return 0;
 }

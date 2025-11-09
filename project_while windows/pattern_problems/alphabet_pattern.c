@@ -2,6 +2,7 @@
 int main()
 {
     int m, n, i, j;
+    // m < n must
     scanf("%d %d", &m, &n);
     for (i = 1 ; i < m ;i++)
     {

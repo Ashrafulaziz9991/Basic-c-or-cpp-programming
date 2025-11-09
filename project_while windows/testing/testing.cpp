@@ -124,49 +124,80 @@
 //    return 0;
 //}
 
-#include<bits/stdc++.h>
-#define fr(i, n)  for (int i = 0; i < n; i++)
+// #include<bits/stdc++.h>
+// #define fr(i, n)  for (int i = 0; i < n; i++)
+// using namespace std;
+
+// vector<int> Pop_front(vector<int>&v)
+// {
+//     reverse(v.begin(), v.end());
+//     v.pop_back();
+//     reverse(v.begin(), v.end());
+//     return v;
+// }
+
+// int main()
+// {
+//     //int i;
+//     // string s = "hi, it's to honour for me";
+//     // fr(i, 4)
+//     // {
+//     //     cout<<s[9]<<s[10]<<endl;
+//     // }
+
+//     vector<int>v;
+//     v.push_back(1);
+//     v.push_back(2);
+//     v.push_back(3);
+//     v.push_back(4);
+//     v.push_back(5);
+//     v.push_back(6);
+
+//     fr(i, v.size())
+//         cout<<v[i]<<" ";
+
+//     v.pop_back();
+
+//     cout<<endl;
+
+//     fr(i, v.size())
+//         cout<<v[i]<<" ";
+
+//     Pop_front(v);
+//     cout<<endl;
+//     for (auto &&i : v)
+//         cout<< i << " ";
+    
+//     return 0;
+// }
+
+
+#include <bits/stdc++.h>
 using namespace std;
-
-vector<int> Pop_front(vector<int>&v)
-{
-    reverse(v.begin(), v.end());
-    v.pop_back();
-    reverse(v.begin(), v.end());
-    return v;
-}
-
 int main()
 {
-    //int i;
-    // string s = "hi, it's to honour for me";
-    // fr(i, 4)
-    // {
-    //     cout<<s[9]<<s[10]<<endl;
-    // }
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    vector<int>v = {4, 1, 5, 9, 4, 7, 5, 6, 5};
+    sort(v.begin(), v.end());
 
-    vector<int>v;
-    v.push_back(1);
-    v.push_back(2);
-    v.push_back(3);
-    v.push_back(4);
-    v.push_back(5);
-    v.push_back(6);
+    for (int i = 0; i < v.size(); i++)
+    {
+        if(v[i] == v[i + 1])
+        {
+            // v.erase(v[i]);
+            // v.erase(v.begin() + i);
+            // v.erase(remove(v.begin(), v.end(), v[i]), v.end());
+            remove(v.begin(), v.end(), v[i]);
 
-    fr(i, v.size())
-        cout<<v[i]<<" ";
+        }
+    }
+    
 
-    v.pop_back();
-
-    cout<<endl;
-
-    fr(i, v.size())
-        cout<<v[i]<<" ";
-
-    Pop_front(v);
-    cout<<endl;
     for (auto &&i : v)
-        cout<< i << " ";
+    {
+        cout << i << " ";
+    }
     
     return 0;
 }

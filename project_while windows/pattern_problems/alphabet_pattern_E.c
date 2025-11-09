@@ -3,6 +3,7 @@ int main()
 {
     int m, n, i, j;
     scanf("%d %d", &m, &n);
+    // m < n
     for (i = 1 ; i < m ;i++)
     {
         for (j = 0 ;j < n ;j++)

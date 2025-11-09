@@ -134,6 +134,12 @@ public:
         node* b = root->next;
         node* d = b->next;
         node* c = tail;
+
+        /*
+        a = root;
+        
+        c = tail;
+        */
         
 //        d = c;
         delete c;
@@ -225,7 +231,11 @@ int main()
     l.delete_Any_index(3);
     l.tarverse();
 
-    cout<<l.exist(102);
+    cout<<l.exist(102)<<endl;
+    l.tarverse();
+
+    l.delete_tail();
+    l.tarverse();
 
     return 0;
 }
