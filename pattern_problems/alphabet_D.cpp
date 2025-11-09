@@ -6,16 +6,12 @@ int main()
     ios_base::sync_with_stdio(0);
     cin.tie(0);
 
-    // int n = 3, m = 24;
-    // int n = 5, m = 39;
     int n = 3, m = 15;
 
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
-        {
             cout << "*"; 
-        }
         cout << endl;
     }
 
@@ -34,39 +30,9 @@ int main()
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
-        {
             cout << "*"; 
-        }
         cout << endl;
     }
-
-    // for (int i = 0; i < m/3; i++)
-    // {
-    //     for (int j = 0; j < m/3; j++)
-    //     {
-    //         cout << "*"; 
-    //     }
-    //     cout << endl;
-    // }
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < m/3; j++)
-    //         cout << "*"; 
-    //     for (int j = 0; j < m/3; j++)
-    //         cout << " "; 
-    //     for (int j = 0; j < m/3; j++)
-    //         cout << "*"; 
-    //     cout << endl;
-    // }
-
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < m; j++)
-    //     {
-    //         cout << "*"; 
-    //     }
-    //     cout << endl;
-    // }
     
     return 0;
 }

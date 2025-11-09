@@ -13,9 +13,7 @@ int main()
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
-        {
             cout << "*"; 
-        }
         cout << endl;
     }
 
@@ -34,9 +32,7 @@ int main()
     for (int i = 0; i < m/3; i++)
     {
         for (int j = 0; j < m/3; j++)
-        {
             cout << "*"; 
-        }
         cout << endl;
     }
     for (int i = 0; i < n; i++)
@@ -53,30 +49,9 @@ int main()
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < m; j++)
-        {
             cout << "*"; 
-        }
         cout << endl;
     }
-    // for (int i = 0; i < n; i++)
-    // {
-    //     for (int j = 0; j < m; j++)
-    //     {
-    //         cout << "*"; 
-    //     }
-    //     cout << endl;
-    // }
-    // for (int i = 0; i < n+2; i++)
-    // {
-    //     for (int j = 0; j < m/3; j++)
-    //         cout << "*"; 
-    //     for (int j = 0; j < m/3; j++)
-    //         cout << " "; 
-    //     for (int j = 0; j < m/3; j++)
-    //         cout << "*"; 
-    //     cout << endl;
-    // }
-    
     
     return 0;
 }
